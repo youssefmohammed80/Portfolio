@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Youssef Mohamed - Junior System & Network Administrator specializing in Windows Server administration, network infrastructure, and hands-on IT support." />
+    <meta
+      name="keywords"
+      content="Junior System & Network Administrator, Windows Server, Active Directory, DNS, DHCP, Group Policy, Cisco, VLAN, OSPF, IT infrastructure, technical support, NTI" />
+    <meta name="author" content="Youssef Mohamed" />
+    <meta
+      property="og:title"
+      content="Youssef Mohamed - Junior System & Network Administrator" />
+    <meta
+      property="og:description"
+      content="Building reliable IT infrastructure through Windows Server administration, networking, and practical troubleshooting." />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Youssef Mohamed | Junior System & Network Administrator</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="main.js" as="script" />
+  </head>
+  <body>
+    <!-- Loading Indicator -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading Portfolio...</p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="container">
+        <a href="#" class="logo" aria-label="Youssef Mohamed Portfolio Home">
+          <span class="logo-icon" aria-hidden="true"></span>
+          <span class="logo-text"
+            >YOUSSEF<span class="logo-highlight">MOHAMED</span></span
+          >
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#description" class="nav-link">Profile</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="theme-toggle-container">
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle dark mode">
+              <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h2 id="hero-title" class="hero-title">
+                <span class="logo-text">YOUSSEF<span class="logo-highlight">MOHAMED</span></span>
+              </h2>
+
+              <h2 class="hero-subtitle hero-subtitle-typed">
+                <span class="typing-text" id="typingText"></span><span class="typing-cursor" aria-hidden="true">|</span>
+              </h2>
+
+              <div class="hero-desc hero-desc-balanced">
+                <p>
+                  <span class="hero-line">Junior <strong>System &amp; Network Administrator</strong> with hands-on experience in</span>
+                  <span class="hero-line"><strong class="accent-green">Windows Server administration</strong>, <strong class="accent-green">network infrastructure</strong>, and</span>
+                  <span class="hero-line"><strong class="accent-green">technical support</strong>.</span>
+                </p>
+                <p>
+                  <span class="hero-line">Business Information Systems student <strong>(Expected Graduation: 2026)</strong></span>
+                  <span class="hero-line">with practical lab experience in <strong class="accent-green">AD DS, DNS, DHCP, Group Policy,</strong></span>
+                  <span class="hero-line"><strong class="accent-green">WSUS, WDS, Hyper-V</strong>, and enterprise networking using</span>
+                  <span class="hero-line"><strong class="accent-green">Cisco Packet Tracer</strong>.</span>
+                </p>
+                <p>
+                  <span class="hero-line">Targeting entry-level opportunities in <strong>System Administration</strong>,</span>
+                  <span class="hero-line"><strong>Network Administration</strong>, and <strong>IT Infrastructure</strong>.</span>
+                </p>
+              </div>
+
+              <div class="hero-stats">
+                <div class="stat">
+                  <span class="stat-number" data-target="6">0</span>
+                  <span class="stat-label">Years Tech Experience</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number" data-target="5">0</span>
+                  <span class="stat-label">Training Programs</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number" data-target="3">0</span>
+                  <span class="stat-label">Featured Projects</span>
+                </div>
+              </div>
+
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                  <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                  Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                  <i class="fas fa-code-branch" aria-hidden="true"></i>
+                  View Projects
+                </a>
+                <a
+                  href="CV.pdf"
+                  download="Youssef_Mohamed_CV.pdf"
+                  class="btn btn-outline"
+                  id="downloadCV">
+                  <i class="fas fa-download" aria-hidden="true"></i>
+                  Download CV
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-image">
+              <div class="profile-container">
+                <div class="profile-placeholder">
+                  <img
+                    src="yossefMohamed.jpeg"
+                    alt="Youssef Mohamed - Junior System & Network Administrator"
+                    class="image-youssef" />
+                </div>
+                <div class="security-badge">
+                  <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                  <span>NTI Programs Graduate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <a
+            href="#about"
+            class="scroll-down"
+            aria-label="Scroll to about section">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">About Me</span>
+            <h2 id="about-title" class="section-title">
+Building Reliable IT Foundations
+            </h2>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I am a <strong>Junior System & Network Administrator</strong> with a strong interest in building stable, well-organized IT environments. My focus is on Windows Server administration, Active Directory services, network fundamentals, and day-to-day infrastructure troubleshooting.
+              </p>
+              <p>
+                What strengthens my profile is the combination of real technical support experience and hands-on lab practice. I enjoy configuring services, solving infrastructure issues, and turning technical concepts into practical, working environments that reflect real business needs.
+              </p>
+
+              <div class="about-features">
+                <div class="feature">
+                  <i class="fas fa-network-wired" aria-hidden="true"></i>
+                  <div>
+                    <h3>System Administration</h3>
+                    <p>Managing AD DS, DNS, DHCP, Group Policy, WSUS, and Hyper-V</p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                  <div>
+                    <h3>Enterprise Networking</h3>
+                    <p>Configuring VLANs, routing, ACLs, NAT/PAT, and secure access</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-timeline">
+              <h3>Professional Journey</h3>
+                <div class="timeline-item">
+                  <div class="timeline-date">2018-2024</div>
+                  <div class="timeline-content">
+                    <h4>Computer & Laptop Repair Technician</h4>
+                    <p>Smart Computer Systems | Technical support, maintenance, and troubleshooting</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Description Section -->
+      <section
+        id="description"
+        class="description"
+        aria-labelledby="description-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Profile</span>
+            <h2 id="description-title" class="section-title">
+Professional Summary
+            </h2>
+          </div>
+
+          <div class="description-content">
+            <div class="description-main">
+              <div class="description-card">
+                <div class="description-icon">
+                  <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="description-text">
+                  <h3>Junior System & Network Administrator</h3>
+                  <p class="description-lead">
+                    Junior System & Network Administrator with hands-on experience in Windows Server administration, network infrastructure, and technical support. Business Information Systems student with practical training through NTI programs and self-driven lab environments focused on real administrative tasks and troubleshooting.
+                  </p>
+
+                  <div class="description-highlights">
+                    <div class="highlight-item">
+                      <i class="fas fa-graduation-cap"></i>
+                      <div>
+                        <h4>Education</h4>
+                        <p>
+                          Bachelor of Management Information Systems (BIS) at EGI Academy, expected October 2026, with a GPA of 3.4 / 4.0.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="highlight-item">
+                      <i class="fas fa-certificate"></i>
+                      <div>
+                        <h4>Training</h4>
+                        <p>
+                          Completed multiple NTI and ITIDA training programs in networking, network security, and cybersecurity fundamentals.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="highlight-item">
+                      <i class="fas fa-network-wired"></i>
+                      <div>
+                        <h4>Specializations</h4>
+                        <p>
+                          Windows Server administration, enterprise networking, infrastructure troubleshooting, and applied IoT safety integration.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="description-details">
+              <div class="detail-card">
+                <h4><i class="fas fa-language"></i> Languages</h4>
+                <div class="languages-grid">
+                  <div class="language-item">
+                    <span class="language-name">Arabic</span>
+                    <span class="language-level">Native</span>
+                    <div class="language-bar">
+                      <div class="language-progress" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="language-item">
+                    <span class="language-name">English</span>
+                    <span class="language-level">Professional Working Proficiency</span>
+                    <div class="language-bar">
+                      <div class="language-progress" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="detail-card">
+                <h4>
+                  <i class="fas fa-graduation-cap"></i> Currently Learning
+                </h4>
+                <div class="learning-tags">
+                  <span class="learning-tag">Windows Server Administration</span>
+                  <span class="learning-tag">Active Directory Services</span>
+                  <span class="learning-tag">Enterprise Networking</span>
+                  <span class="learning-tag">Infrastructure Troubleshooting</span>
+                  <span class="learning-tag">Security Fundamentals</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Technical Expertise</span>
+            <h2 id="skills-title" class="section-title">
+              Skills & Technologies
+            </h2>
+          </div>
+
+          <div class="skills-filter" id="skillsFilter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="network">Network</button>
+            <button class="filter-btn" data-filter="system">System</button>
+            <button class="filter-btn" data-filter="security">Security</button>
+            <button class="filter-btn" data-filter="tools">Tools</button>
+          </div>
+
+          <div class="skills-grid" id="skillsContainer">
+            <!-- Skills loaded by JavaScript -->
+          </div>
+
+          <div class="skills-progress">
+            <h3>Technical Proficiency</h3>
+            <div class="progress-bars">
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>Network Infrastructure</span>
+                  <span class="progress-value">95%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="95"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>Windows Server Administration</span>
+                  <span class="progress-value">92%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="92"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>Technical Support & Troubleshooting</span>
+                  <span class="progress-value">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Portfolio</span>
+            <h2 id="projects-title" class="section-title">
+              Technical Projects
+            </h2>
+          </div>
+
+          <div class="projects-grid" id="projectsContainer">
+            <!-- Projects loaded by JavaScript -->
+          </div>
+
+          <div class="projects-cta">
+            <p>Project videos and deeper case studies will be added soon.</p>
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-laptop-code" aria-hidden="true"></i>
+Contact Me for Details
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section
+        id="certifications"
+        class="certifications"
+        aria-labelledby="certifications-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Credentials</span>
+            <h2 id="certifications-title" class="section-title">
+              Certifications & Training
+            </h2>
+          </div>
+
+          <div class="certs-grid" id="certsContainer">
+            <!-- Certifications loaded by JavaScript -->
+          </div>
+
+          <div class="cert-verification">
+            <p>
+              <i class="fas fa-shield-check" aria-hidden="true"></i>
+Click any certificate card to open the original certificate file
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 id="contact-title" class="section-title">
+Let's Connect
+            </h2>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-header">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <h3>Email</h3>
+                </div>
+                <a
+                  href="mailto:eng.youssefmohammed80@gmail.com"
+                  class="contact-link">
+                  eng.youssefmohammed80@gmail.com
+                </a>
+                <p class="contact-note">Best for job opportunities and professional communication</p>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-header">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                  <h3>Phone</h3>
+                </div>
+                <a href="tel:+201094970350" class="contact-link">
+                  +20 109 497 0350
+                </a>
+                <p class="contact-note">Calls and WhatsApp available</p>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-header">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  <h3>Location</h3>
+                </div>
+                <p>Giza, Egypt</p>
+                <p class="contact-note">Open to internships and entry-level IT roles</p>
+              </div>
+
+              <div class="social-security">
+                <h3>Verified Profiles</h3>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/youssefmohammed80"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link github">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/youssef-mohamed-sec/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link linkedin">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://wa.me/+201094970350"
+                    target="_blank"
+                    class="social-link whatsapp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    <span>WhatsApp</span>
+                  </a>
+                  <button
+                    class="btn btn-primary email-copy-btn"
+                    onclick="copyEmail()"
+                    title="Copy email">
+                    <i class="fas fa-copy"></i> Copy Email
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formspree.io/f/xzdvgjzq"
+              method="POST"
+              novalidate>
+              <div class="form-header">
+                <i class="fas fa-lock" aria-hidden="true"></i>
+                <h3>Send a Message</h3>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  aria-label="Your Name" />
+                <label for="name">Your Name</label>
+                <span class="error-message" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  aria-label="Your Email" />
+                <label for="email">Your Email</label>
+                <span class="error-message" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  aria-label="Message Subject" />
+                <label for="subject">Subject</label>
+                <span class="error-message" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  aria-label="Your Message"></textarea>
+                <label for="message">Your Message</label>
+                <span class="error-message" id="messageError"></span>
+              </div>
+
+              <div class="form-footer">
+                <div class="security-notice">
+                  <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                  <span>I usually reply through email or WhatsApp</span>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-loader" aria-hidden="true"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#" class="footer-logo">
+              <span class="logo-icon" aria-hidden="true">🛡️</span>
+              <span>YOUSSEF MOHAMED</span>
+            </a>
+            <p class="footer-tagline">Windows Server | Networking | IT Infrastructure</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#description">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="CV.pdf" download="Youssef_Mohamed_CV.pdf">Download CV</a></li>
+                <li><a href="https://www.linkedin.com/in/youssef-mohamed-sec/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-newsletter">
+            <h4>Stay Connected</h4>
+            <p>Leave your email and I can connect with you later.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                required
+                aria-label="Subscribe to newsletter" />
+              <button type="submit" aria-label="Subscribe">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Youssef Mohamed. All rights
+            reserved.
+          </p>
+          <p class="footer-security">
+            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+Junior System & Network Administrator
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="main.js" defer></script>
+  </body>
+</html>
